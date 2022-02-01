@@ -3,8 +3,148 @@
 <head>
 <title>feedback_form</title>
 <style>
+  body {
+  background-image:url(https://wallpaperaccess.com/full/526517.jpg);
+  }
+  label {    
+  padding: 12px 12px 12px 0;    
+  display: inline-block;
+  }
+input[type=text], select, textarea {    
+  width: 50%;    
+  padding: 8px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 5px;    
+  text-align:center;
+  resize: vertical;
+}
+input[type=email], select, textarea {    
+  width: 50%;    
+  padding: 8px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 5px;    
+  resize: vertical;
+}
+input[type=number], select, textarea {    
+  width: 50%;    
+  padding: 8px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 5px;    
+  resize: vertical;
+}
+input[type=date], select, textarea {    
+  width: 50%;    
+  padding: 8px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 5px;    
+  resize: vertical;
+}
+  input[type=submit] {    
+  background-color: rgb(26, 163, 255);    
+  color: white;    
+  padding: 10px 20px;     
+  border-radius: 10px;    
+  cursor: pointer;    
+}    
+input[type=submit]:hover {    
+  background-color: green;    
+}
 </style>
 </head>
 <body>
+<h1 style ="color:red;">FEEDBACK ON LMS: </h1>
+<p style ="font-family:Trebuchet MS; color:Saddlebrown;">Hey there, Hope you are doing good. It's been 30 days you started using LMS.<br>This is a small feedback to just get know how are students feeling about this platform?<br>
+Just go through the form and fill-up things so we get to know where we can improve.<br>
+Yup! There is a suggestion box waiting to get filled by your suggestion that comes to our considerance.</p>
+<form>
+<label for="name1">First name: </label>
+<input type="text" id="name1" name="name1"><br>
+<label for="name2">Last name: </label>
+<input type="text" id="name2" name="name2"><br>
+<label for="rnum">Roll Number: </label>
+<input type="text" id="rnum" name="rnum"><br>
+<label for="email">Email: </label>
+<input type="email" id="email" name="email"><br>
+<label for="phno">Phone Number:</label>
+<input type="number" id="phno" name="phno"><br>
+<label for="birthday">Date of Birth </label>
+<input type="date" id="birthday" name="birthday"><br>
+<label for="year">Which year are you studying:</label>
+<select id="year" name="year">
+<option value="1st Year">1st Year</option>
+<option value="2nd Year">2nd Year</option>
+<option value="3rd Year">3rd Year</option>
+<option value="4th Year">4th Year</option>
+</select>
+<p>Gender:</p>
+<input type="radio" id="male" name="gender" value="MALE">
+<label for="male">MALE</label><br>
+<input type="radio" id="female" name="gender" value="FEMALE">
+<label for="female">FEMALE</label><br>
+<input type="radio" id="neutral" name="gender" value="RATHER NOT SAY">
+<label for="neutral">RATHER NOT SAY</label>
+<p>I am able to:<br>
+<input type="checkbox" id="jc" name="jc" value="jc">
+<label for="jc">Join Class</label>
+<input type="checkbox" id="ca" name="vehicle2" value="Ca">
+<label for="ca">Connect audio without any issue</label>
+<input type="checkbox" id="vpl" name="vehicle3" value="vpl">
+<label for="vpl">Work on VPL</label></p>
+<p>How comfortable is LMS for classes?</p>
+<input type="radio" id="1" name="com" value="1">
+<label for="1">1</label>
+<input type="radio" id="2" name="com" value="2">
+<label for="2">2</label>
+<input type="radio" id="3" name="com" value="3">
+<label for="3">3</label>
+<input type="radio" id="4" name="com" value="4">
+<label for="4">4</label>
+<input type="radio" id="5" name="com" value="5">
+<label for="5">5</label>
+<input type="radio" id="6" name="com" value="6">
+<label for="6">6</label>
+<input type="radio" id="7" name="com" value="7">
+<label for="7">7</label>
+<input type="radio" id="8" name="com" value="8">
+<label for="8">8</label>
+<input type="radio" id="9" name="com" value="9">
+<label for="9">9</label>
+<input type="radio" id="10" name="com" value="10">
+<label for="10">10</label><br>
+How helpful is LMS dashboard?<br>
+<input type="radio" id="1" name="com" value="1">
+<label for="1">1</label>
+<input type="radio" id="2" name="com" value="2">
+<label for="2">2</label>
+<input type="radio" id="3" name="com" value="3">
+<label for="3">3</label>
+<input type="radio" id="4" name="com" value="4">
+<label for="4">4</label>
+<input type="radio" id="5" name="com" value="5">
+<label for="5">5</label>
+<input type="radio" id="6" name="com" value="6">
+<label for="6">6</label>
+<input type="radio" id="7" name="com" value="7">
+<label for="7">7</label>
+<input type="radio" id="8" name="com" value="8">
+<label for="8">8</label>
+<input type="radio" id="9" name="com" value="9">
+<label for="9">9</label>
+<input type="radio" id="10" name="com" value="10">
+<label for="10">10</label><br>
+<label for="data">How much amount of data is getting consumed for classes?</label>
+<select id="net" name="net">
+<option value="<1GB">Less than 1GB</option>
+<option value="1GB to 2GB">Between 1GB and 2GB</option>
+<option value=">2GB">More than 2GB</option>
+<option value="donno">No Idea!</option>
+</select>
+<p>Finally, You are in the Last Step, Help us improve: </p>
+<textarea name="sugg" style="width:600px; height:300px; border: 10px solid black; border-color:green;">
+Please write-up your suggestions or issues here.
+</textarea><br>
+<input type="submit" value="Submit">
+<input type="submit" value="Reset">
+
 </body>
 </html>
